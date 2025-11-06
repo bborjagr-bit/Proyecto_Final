@@ -28,7 +28,7 @@
                         <fieldset>
                             <legend>Información personal</legend>
                                 <label for="nombre">Nombre completo:</label>
-                                <input type="text" placeholder="Ej: Javier López" name="nombre" required><br></br>
+                                <input type="text" placeholder="Ej: Javier López" name="nombre" min="1" max="10" required><br></br>
                                 <label for="correo">Correo electrónico:</label>
                                 <input type="email" placeholder="ejemplo@correo.com" name="correo" required><br></br>
                                 <label for="teléfono">Teléfono:</label>
@@ -36,27 +36,24 @@
                                 <label for="edad">Edad (mín 18):</label>
                                 <input type="number" min="18" max="100" name="edad" required><br></br>
                                 <label for="género">Género:</label><br><br>
-                                    <Select for="género" required><br></br>
-                                        <option name="género">Masculino</option><br></br>
-                                        <option name="género">Femenino</option><br></br>
-                                        <option name="género">Otro</option><br></br>
-                                    </select><br></br>
+                                    <input type="radio" name="género">Masculino
+                                    <input type="radio" name="género">Femenino
+                                    <input type="radio" name="género">Otro
+                                
 
                         </fieldset>
                         <fieldset>
                             <legend>Detalles de la inscripción</legend>
                                 <label>Tipo de entrada:</label>
-                                    <select name="tipo">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option><br><br>
+                                    <select name="género">
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                        <option>otro</option><br><br>
                         </fieldset>
                         <fieldset>
                             <legend>Información adicional</legend>
                                 <label for="como">¿Cómo nos conoció?:</label>
-                                    <input type="radio" name="como">Redes sociales
-                                    <input type="radio" name="como">Recomendaciones de un amigo
-                                    <input type="radio" name="como">Otro
+                                    
 
 
                         </fieldset>
