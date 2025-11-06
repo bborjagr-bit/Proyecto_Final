@@ -35,16 +35,17 @@
                                 <label for="teléfono">Teléfono:</label>
                                 <input type="tel" placeholder="Ej: 664987264" name="teléfono" required><br></br>
                                 <label for="edad">Edad (mín 18):</label>
-                                <input type="number" min="18" max="100" name="edad" required><br></br>
-                                <label for="género">Género:</label>
+                                <input type="number" placeholder="Ej: 25" min="18" max="100" name="edad" required><br></br>
+                                <label for="género" required>Género:</label>
                                     <input type="radio" name="género">Masculino
                                     <input type="radio" name="género">Femenino
-                                    <input type="radio" name="género">Otro
-                                
+                                    <input type="radio" name="género">Otro<br></br>
+                                <label for="datos">Acepto el tratamiento de mis datos:</label>
+                                    <input type="checkbox" name="datos" required>
 
                         </fieldset>
                         <fieldset>
-                            <legend>Información personal</legend>
+                            <legend><b>Información personal</b></legend>
                                 <label for="interés">Interés en otros deportes:</label>
                                     <input type="checkbox" name="interés">Baloncesto
                                     <input type="checkbox" name="interés">Tenis
@@ -52,25 +53,63 @@
                                     <input type="checkbox" name="interés">Balonmano
                                     <input type="checkbox" name="interés">Motor
                                     <input type="checkbox" name="interés">Atletismo<br><br>
-                                <label for="Estudios">Estudios realizados:</label>
+                                <label for="Estudios" required>Estudios realizados:</label>
                                     <select name="Estudios">
-                                        <option>ESO</option>
-                                        <option>Bachillerato</option>
-                                        <option>Grado Medio</option>
-                                        <option>Grado superior</option>
-                                        <option>Grado universitario</option>
-                                        <option>Master</option>
+                                        <optgroup label="Instituto">
+                                            <option>ESO</option>
+                                            <option>Bachillerato</option>
+                                        </optgroup>
+                                        <optgroup label="Formación profesional">
+                                            <option>FP Básica</option>
+                                            <option>Grado Medio</option>
+                                            <option>Grado Superior</option>
+                                        </optgroup>
+                                        <optgroup label="Universidad">
+                                            <option>Grado</option>
+                                            <option>Master</option>
+                                            <option>Doctorado</option>
+                                        </optgroup>
+                                    </select><br><br>
+                                <label for="como" required>¿Cómo nos conociste?:</label><br><br>
+                                    <textarea name="como"></textarea><br><br>
+                                <label for="por" required>¿Por qué eres del Madrid?:</label><br><br>
+                                    <textarea name="por"></textarea><br><br>
+                                <label for="camiseta" required>Nombre y dorsal que quieres en la camiseta:</label><br><br>
+                                    <textarea name="camiseta"></textarea><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend><b>Complementaria</b></legend>
+                                <label for="date">Fecha y hora:</label>
+                                    <input type="datetime-local" name="date" required><br></br>
+                                <label for="comunidad" required>Comunidad Autónoma:</label>
+                                    <select name="comunidad">
+                                            <option>Andalucía</option>
+                                            <option>Canarias</option>
+                                            <option>Baleares</option>
+                                            <option>Comunidad Valenciana</option>
+                                            <option>País Vasco</option>
+                                            <option>Galicia</option>
+                                            <option>Aragón</option>
+                                            <option>Asturias</option>
+                                            <option>Cantabria</option>
+                                            <option>Castilla La Mancha</option>
+                                            <option>Castilla y León</option>
+                                            <option>Cataluña</option>
+                                            <option>Extremadura</option>
+                                            <option>Madrid</option>
+                                            <option>Murcia</option>
+                                            <option>Navarra</option>
+                                            <option>La Rioja</option>
+                                            <option>Ceuta</option>
+                                            <option>Melilla</option>
                                     </select>
                         </fieldset>
                         <fieldset>
-                            <legend>Información adicional</legend>
-                                <label for="como">¿Cómo nos conoció?:</label>
-                                    
-
-
-                        </fieldset>
-                        <fieldset>
-                            dhgjdjhhjg
+                            <legend><b>Enviar formulario</b></legend>
+                            <label for="submit"></label>
+                                <input type="submit" name="submit" value="Enviar formulario" required>
+                            <label for="reset"></label>
+                                <input type="reset" name="reset" value="Limpiar selección" required>
                         </fieldset>
     </form>
             </article>
