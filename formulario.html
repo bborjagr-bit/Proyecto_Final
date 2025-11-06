@@ -26,16 +26,17 @@
                 <article>
                     <form>     
                         <fieldset>
-                            <legend>Información personal</legend>
+                            <legend><b>Información básica</b></legend>
                                 <label for="nombre">Nombre completo:</label>
-                                <input type="text" placeholder="Ej: Javier López" name="nombre" min="1" max="10" required><br></br>
+                                <input type="text" placeholder="Ej: Javier López" name="nombre" maxlength="35" required><br></br>
                                 <label for="correo">Correo electrónico:</label>
                                 <input type="email" placeholder="ejemplo@correo.com" name="correo" required><br></br>
+                                <!-- estamos usando html 5 por lo que la validación del correo es automática -->
                                 <label for="teléfono">Teléfono:</label>
                                 <input type="tel" placeholder="Ej: 664987264" name="teléfono" required><br></br>
                                 <label for="edad">Edad (mín 18):</label>
                                 <input type="number" min="18" max="100" name="edad" required><br></br>
-                                <label for="género">Género:</label><br><br>
+                                <label for="género">Género:</label>
                                     <input type="radio" name="género">Masculino
                                     <input type="radio" name="género">Femenino
                                     <input type="radio" name="género">Otro
@@ -43,12 +44,23 @@
 
                         </fieldset>
                         <fieldset>
-                            <legend>Detalles de la inscripción</legend>
-                                <label>Tipo de entrada:</label>
-                                    <select name="género">
-                                        <option>Masculino</option>
-                                        <option>Femenino</option>
-                                        <option>otro</option><br><br>
+                            <legend>Información personal</legend>
+                                <label for="interés">Interés en otros deportes:</label>
+                                    <input type="checkbox" name="interés">Baloncesto
+                                    <input type="checkbox" name="interés">Tenis
+                                    <input type="checkbox" name="interés">Ciclismo
+                                    <input type="checkbox" name="interés">Balonmano
+                                    <input type="checkbox" name="interés">Motor
+                                    <input type="checkbox" name="interés">Atletismo<br><br>
+                                <label for="Estudios">Estudios realizados:</label>
+                                    <select name="Estudios">
+                                        <option>ESO</option>
+                                        <option>Bachillerato</option>
+                                        <option>Grado Medio</option>
+                                        <option>Grado superior</option>
+                                        <option>Grado universitario</option>
+                                        <option>Master</option>
+                                    </select>
                         </fieldset>
                         <fieldset>
                             <legend>Información adicional</legend>
