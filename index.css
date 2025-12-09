@@ -100,3 +100,49 @@ nav{
     margin:2%;
 
 }
+
+.main{
+    display: flex;
+    background-color:rgb(32, 61, 129);
+    width: 98%;
+    height:20%;
+    margin-left:1%;
+    margin-right:1%;
+    margin-top: 15px;
+    margin-bottom:15px;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20px;
+}
+
+.palmares{
+    background-color:rgb(120, 113, 255);
+    width: 90%;
+    height:20%;
+    padding: 5%;
+    margin:5%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20px;
+}
+
+.futuro{
+    background-color:rgb(255, 230, 0);
+    width: 90%;
+    height:20%;
+    margin:5%;
+    padding: 5%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20px;
+}
+
+.svg{
+    background-color: white;
+    margin:5%;
+    padding: 5%;
+    width: auto;
+    height: auto;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
