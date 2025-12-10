@@ -1,6 +1,4 @@
-.fundacionjugadores{
 
-}
 
 #fundacion{
 background-color:rgb(32, 61, 129) ;
@@ -8,9 +6,41 @@ height:auto;
 margin-left:1%;
 margin-right: 1%;
 padding:1%;
-border-top-left-radius: 20%;
 border-bottom-right-radius: 20%;
 text-align:center;
+}
+
+.divfundacion{
+display: flex;
+background-color:rgb(32, 61, 129) ;
+border-top-left-radius: 20%;
+margin-left:1%;
+margin-right:1%;
+}
+
+.divjugadores{
+display: flex;
+background-color:rgb(32, 61, 129) ;
+border-top-left-radius: 20%;
+margin-left:1%;
+margin-right:1%;
+}
+
+.h3jugadores{
+    color:rgb(255, 255, 255);
+    justify-content:center;    
+    text-align: center;
+    padding:1%;
+    width:92%;
+}
+
+
+.h3fundacion{
+color:rgb(255, 255, 255);
+    justify-content:center;    
+    text-align: center;
+    padding:1%;
+    width:92%;
 }
 
 .h1primerosanos{
@@ -29,9 +59,76 @@ padding:1%;
 justify-content: center;
 align-items: center;
 color: rgb(255, 230, 0);
+margin-left:5%;
 }
 
 .fundacioncaja2{
+align-content: center;
+justify-content: center;
+padding-left:5%;
+padding-right: 5%;
+margin-left:5%;
+border-top-left-radius: 20%;
+border-bottom-right-radius: 20%;
+background-color:rgb(120, 113, 255);
+}
+
+.fundacioncolores{
+display: flex;
+width:92%;
+height:auto;
+margin:1%;
+padding:1%;
+}
+
+.colorescaja1{
+justify-content: center;
+align-items: center;
+color: rgb(255, 230, 0);
+}
+
+.colorescaja2{
+align-content: center;
+justify-content: center;
+padding-left:5%;
+padding-right: 5%;
+margin-left:5%;
+border-top-left-radius: 20%;
+border-bottom-right-radius: 20%;
+background-color:rgb(120, 113, 255);
+}
+
+.h4fundacioncolores{
+    color:white;
+}
+
+#jugadores{
+background-color:rgb(32, 61, 129) ;
+height:auto;
+margin-left:1%;
+margin-right: 1%;
+padding:1%;
+margin-bottom:1%;
+border-top-right-radius: 20%;
+border-bottom-left-radius: 20%;
+text-align:center;
+}
+
+.mejoresjugadores{
+display: flex;
+width:92%;
+height:auto;
+margin:1%;
+padding:1%;
+}
+
+.jugadorescaja1{
+justify-content: center;
+align-items: center;
+color: rgb(255, 230, 0);
+}
+
+.jugadorescaja2{
 align-content: center;
 justify-content: center;
 padding-left:5%;
@@ -42,8 +139,39 @@ border-bottom-left-radius: 20%;
 background-color:rgb(120, 113, 255);
 }
 
+.iconosblancos{
+display: flex;
+width:92%;
+height:auto;
+margin:1%;
+padding:1%;
+}
 
+.iconoscaja1{
+justify-content: center;
+align-items: center;
+color: rgb(255, 230, 0);
+margin-left:5%;
+}
 
+.iconoscaja2{
+align-content: center;
+justify-content: center;
+padding-left:5%;
+padding-right: 5%;
+margin-left:5%;
+border-top-right-radius: 20%;
+border-bottom-left-radius: 20%;
+background-color:rgb(120, 113, 255);
+}
+
+.h4iconosblancos{
+color:white;
+}
+
+.h4mejoresjugadores{
+color:white;
+}
 
 
 
