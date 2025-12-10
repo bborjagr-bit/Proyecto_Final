@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia del Real Madrid</title>
+     <link rel="stylesheet" href="historia.css" />
 </head>
 <body>
     <header>
@@ -14,8 +15,8 @@
                     <!-- audio reproduciéndose en bucle -->
                     <audio src="media/madridpiano.mp3" autoplay></audio>
     </header>
-    <nav>
-        <ul>
+    <nav class="navheader">
+        <ul class="enlaces">
             <li><a href ="index.html" target="_blank">Inicio</a></li>
             <li><a href ="multimedia.html" target="_blank">Momentos para el recuerdo</a></li>
             <li><a href ="tabla.html" target="_blank">Estadísticas</a></li>
@@ -25,12 +26,14 @@
             <li><a href ="#contacto">Contacto</a></li>
         </ul>
     </nav>
-    <section>
+    <section class="fundacionjugadores">
         <!-- artículo 1: fundación, con párrafos e imágenes -->
-        <article id="fundación">
-            <h3>Fundación</h3>
+        <h3>Fundación</h3>
+        <article id="fundacion">
                 <!-- parte 1 -->
-                <h4>Primeros años</h4>
+        <div class="fundacionprimerosanos">
+            <div class="fundacioncaja1">
+                <h4 class="h1primerosanos">Primeros años</h4>
                     <p>A finales del <b>siglo XIX</b> surgieron en Madrid los primeros equipos de fútbol, entre ellos <b><i>la Sociedad de Foot-Ball</i></b>, creada en 1897 por antiguos alumnos de la Institución Libre de Enseñanza. Esta sociedad fue el origen del futuro Real Madrid.</p> 
                     <p>En <b>1900</b>, el grupo se dividió, y existen dos versiones sobre lo que ocurrió:</p>
                         <ol>
@@ -39,17 +42,27 @@
                         </ol>
                     <p>En todo caso, en <b>1901</b> ya usaban el nombre <b><i>Madrid Foot-Ball Club</i></b>, aunque la fundación legal del club se completó en <b>1902</b>.</p>
                     <p>El primer presidente conocido fué <b>Julián Palacios</b>.</p>
+            </div>
+            <div class="fundacioncaja2">
                         <img src="images/madridXX.jpg" width="300" height="150" alt="estadio del madrid en el siglo XX">
+            </div>
+        </div>
+        <div class="fundacioncolores">
                 <!-- parte 2 -->           
+                <div class="colorescaja1">
                 <h4>Colores, y equipación</h4>
                     <p>El origen de la camiseta blanca del <b>Real Madrid</b> se remonta a los primeros años del club, y tiene una explicación sencilla pero simbólica. El color blanco fue elegido en <b>1902</b>, cuando se fundó oficialmente el <b><i>Madrid Foot-Ball Club</i></b>.
                         Sus fundadores (entre ellos <b>Juan y Carlos Padrós</b>) decidieron que el equipo vistiera de <b>blanco completo</b>, inspirándose en el <b><i>Corinthian Football Club de Londres</i></b>, un prestigioso club amateur inglés de finales del siglo XIX. 
                         El <b><i>Corinthians</i></b> era admirado por su espíritu deportivo, elegancia y juego limpio, valores que los fundadores querían reflejar en el nuevo club madrileño. Por eso adoptaron su uniforme completamente blanco. </p>
                     <p>Desde entonces el Madrid ha pasado a la historia por su uniforme <b><i>blanco impoluto</i></b>, desde las medias, (que eran negras durante las primeras décadas), hasta los pantalones y la camiseta. A pesar de esto, cada varias temporadas las equipaciones incorporaban ligeros detalles en <b>morado</b> o <b>azul</b> para aportar un poco de variedad. 
                         Ya en temporadas más actuales se pueden ver detalles más elaborados en cuellos y mangas con colores no tan representativos del club como el naranja, producto de su larga y fructifera unión con el gigante alemán de ropa deportiva <b>adidas</b>.</p>
+                    </div>
+                    <div class="colorescaja2">  
                         <img src="images/equipaciones.jpg" width="300" height="150" alt="equipaciones del madrid en su historia">
-        <!-- artículo 2: jugadores, con párrafos e imágenes -->                
+                    </div> 
+        </div>
         </article>
+            <!-- artículo 2: jugadores, con párrafos e imágenes -->    
             <article id="jugadores">
                  <h3>Jugadores</h3>
                     <!-- parte 1 -->
@@ -66,16 +79,24 @@
         <aside id="títulos"></aside>
     </section>
     <!-- contacto con correo, teléfono y enlaces insertados en imágenes -->
+    <div class="footercontacto">
+        <h3 class="h3footer">Contacto</h3>
+    </div>
     <footer id="contacto">
-        <h3>Contacto</h3>
-        <a href="mailto:jgarleo132g@g.educaand.es" target="_blank">Correo de contacto:jgarleo132g@g.educaand.es</a>
-        <p>Teléfono de contacto:664789230</p>
-        <a href="https://www.instagram.com/realmadrid" target="_blank"><img src="images/insta_logo.png" width="40" height="40" alt="logo instagram"></a>
-        <a href="https://x.com/realmadrid" target="_blank"><img src="images/x_logo.png" width="40" height="40" alt="logo twitter"></a>
-        <a href="https://www.tiktok.com/@realmadrid?lang=es" target="_blank"><img src="images/tiktok_logo.png" width="40" height="40" alt="logo tik tok"></a>
-        <a href="https://www.facebook.com/RealMadrid/?locale=es_ES" target="_blank"><img src="images/facebook_logo.png" width="40" height="40" alt="logo facebook"></a>
-        <a href="https://www.youtube.com/realmadrid" target="_blank"><img src="images/youtube_logo.png" width="40" height="40" alt="logo youtube"></a>
-        <p>Copyright© 2025. Designed by BORJU</p>
+        <div class="cajasfooter1">
+            <a href="mailto:jgarleo132g@g.educaand.es" target="_blank">Correo de contacto:jgarleo132g@g.educaand.es</a>
+            <p>Teléfono de contacto:664789230</p>
+        </div>
+        <div class="cajasfooter2">
+            <a class="enlacesfooter" href="https://www.instagram.com/realmadrid" target="_blank"><img src="images/insta_logo.png" width="40" height="40" alt="logo instagram"></a>
+            <a class="enlacesfooter" href="https://x.com/realmadrid" target="_blank"><img src="images/x_logo.png" width="40" height="40" alt="logo twitter"></a>
+            <a class="enlacesfooter" href="https://www.tiktok.com/@realmadrid?lang=es" target="_blank"><img src="images/tiktok_logo.png" width="40" height="40" alt="logo tik tok"></a>
+            <a class="enlacesfooter" href="https://www.facebook.com/RealMadrid/?locale=es_ES" target="_blank"><img src="images/facebook_logo.png" width="40" height="40" alt="logo facebook"></a>
+            <a class="enlacesfooter" href="https://www.youtube.com/realmadrid" target="_blank"><img src="images/youtube_logo.png" width="40" height="40" alt="logo youtube"></a>
+        </div>
     </footer>
+    <div class="footercopy">
+        <p class="copy">Copyright© 2025. Designed by BORJU</p>
+    </div>
 </body>
 </html>
